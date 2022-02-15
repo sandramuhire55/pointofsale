@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Point of sale</title>
+  </head>
+  <body>
+     
+    <div class="form">
+      <p>
+        <img src="./img/logo.png" class="logo" alt="" />
+      </p>
+
+      <form action="">
+        <p>
+          <input type="email" id="email" placeholder="Email" />
+        </p>
+        <input type="password" id="password" placeholder="Password" /><br />
+        <p>
+          <input type="button" value="Login" onclick="login()" />
+        </p>
+        <div id="error"></div>
+      </form>
+    </div>
+    <script>
+      function login() {
+        const email = document.querySelector("#email").value;
+        const password = document.querySelector("#password").value;
+        if (email == "" && password == "") {
+          document.querySelector("#error").innerHTML =
+            "Email and password required!!!";
+          document.querySelector("#error").style.display = "block";
+        } else {
+          if (email === "sandra@gmail.com" && password === "12345") {
+            window.location.href = "dashboard.html";
+          } else {
+            document.querySelector("#error").innerHTML =
+              "Wrong email or password!!!";
+            document.querySelector("#error").style.display = "block";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

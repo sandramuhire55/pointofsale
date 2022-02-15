@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="suppliers.html" class="nav_link">Suppliers</a>
+        <a href="products.html">Products</a>
+        <a href="report.html">Report</a>
+        <a href="users.html">Users</a>
+        <a href="/" class="logout_img_link"><img src="./img/logout.png" class="logout_img" alt=""></a>
+    </nav>
+    <div class="container">
+       <div class="content-container">
+        <h1>Products</h1>
+        <hr>
+        <div class="supplier-section">
+            <button class="btn" id="btn-add-sup">Add new Products</button>
+          
+        </div>
+        <div id="suppliers"></div>
+       </div>
+    </div>
+
+    <div class="form-container" id="frm-container">
+        <div class="btn-close" id="btn-close">
+            X
+        </div>
+        <div class="form">
+            <p>
+                <img src="./img/logo.png" class="logo" alt="">
+            </p>
+            <form action="">
+                <p>
+                    <input type="text" id="name" placeholder="Name">
+                </p>
+                <input type="text" id="address" placeholder="Address"><br>
+                <p>
+                    <input type="button" value="Add supplyer" class="btn" id="btn-add-action">
+                </p>
+                <div id="error"></div>
+            </form>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

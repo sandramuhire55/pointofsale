@@ -1,0 +1,128 @@
+body {
+   /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.form {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    background-color: #fff;
+}
+#error {
+    color: red;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+input[type=email], input[type=password] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 1px  rgba(97, 97, 97, 0.637);
+}
+input[type=email]:focus, input[type=password]:focus {
+    outline: none;
+}
+input[type=button] {
+    background-color:rgb(109, 109, 109) ;
+    border:none;
+    color: #fff;
+    padding: 0.3rem 1.5rem;
+    border-radius: 4px;
+    
+}
+nav {
+    padding: 30px;
+    background: white;
+    z-index: 1;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(18, 18, 22);
+    font-size: 10px;
+    padding: 6px;
+    margin-right: 10px;
+}
+nav a:hover, .nav_link {
+    border-bottom: rgb(200, 200, 224) solid 3px;
+}
+.logout_img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: -5px;
+    margin-left: 50px;
+}
+.logout_img_link {
+    border-bottom: white solid 1px;
+}
+.logout_img_link:hover {
+    border-bottom: white solid 2px;
+}
+.container {
+    position: absolute;
+    margin-top: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-container {
+    background-color: #fff;
+    padding: 1rem;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(158, 146, 146, 0.575);
+}
+.right {
+    float: right;
+}
+
+.btn {
+    background-color:rgb(225, 225, 231) ;
+    border:none;
+    color: #fff;
+    padding: 0.3rem 1.5rem;
+    border-radius: 12px;
+}
+
+.btn:hover {
+    background-color:rgb(145, 145, 158) ;
+    color: rgb(228, 228, 228);
+    box-shadow: 0 0 3px rgba(88, 88, 97, 0.815);
+    cursor: pointer;
+
+}
+
+.form-container {
+    box-shadow: 0 0 15px rgba(146, 144, 144, 0.575);
+    width: 30%;
+    padding: 1rem;
+    position: absolute;
+    background-color: #fff;
+    left: 35%;
+    display: none;
+}
+
+.btn-close {
+    float: right;
+    color: #000000;
+}
+
+.btn-close:hover {
+    cursor: pointer;
+}
+
